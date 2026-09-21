@@ -15,3 +15,27 @@
 7. `npm start`
 
 8. http://localhost:3000/graphql
+
+```
+{
+  profile {
+    name
+    description
+    experiences {
+      company
+      position
+      startDate
+      endDate
+      projects {
+        name
+        description
+        link
+      }
+    }
+    skills {
+      name
+      level
+    }
+  }
+}
+```
